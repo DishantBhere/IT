@@ -8,24 +8,23 @@ It also includes the Lab Manual and Practical Slip provided by the university so
 
 This repository includes:
 
-* Python practical files
+* Python & Rstudio Practical files
 * CSV / Excel datasets used in practicals
 * SQL practical setup and queries
 * Power BI files
 * University Lab Manual
 * University Practical Slip
 
----
 
 ## University Resources
 
 ### Lab Manual used for practicals
 
-➡ https://github.com/DishantBhere/BSCCIT/blob/main/Lab%20Manual.pdf
+➡  [New Lab Manual.pdf](https://github.com/DishantBhere/BSCCIT/blob/main/New%20BI/BI%20practical.pdf)
 
 ### Practical Slip used during exams
 
-➡ https://github.com/DishantBhere/BSCCIT/blob/main/Practical%20Slip.pdf
+➡ [New BI/BI Practical_s Slips.pdf](https://github.com/DishantBhere/BSCCIT/blob/main/New%20BI/BI%20Practical_s%20Slips.pdf)
 
 ---
 
