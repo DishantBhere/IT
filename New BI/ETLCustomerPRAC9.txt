@@ -1,0 +1,91 @@
+1️⃣ Create the 3 Databases
+
+Top menu → New Query
+
+Run:
+
+CREATE DATABASE CustomerOLTP;
+CREATE DATABASE CustomerStaging;
+CREATE DATABASE CustomerDW;
+
+Press Execute.
+
+Now refresh Databases on the left.
+
+2️⃣ Create OLTP Table
+
+New Query again:
+
+USE CustomerOLTP;
+
+CREATE TABLE CustOLTP(
+custid INT,
+custname VARCHAR(50),
+address VARCHAR(50),
+sal INT
+);
+
+Execute.
+
+3️⃣ Insert Records
+INSERT INTO CustOLTP VALUES
+(1,'Rahul','Mumbai',50000),
+(2,'Amit','Delhi',60000),
+(3,'Sneha','Pune',55000),
+(4,'Riya','Nashik',65000),
+(5,'Karan','Thane',70000);
+
+Execute.
+
+4️⃣ Create Staging Table
+USE CustomerStaging;
+
+CREATE TABLE CustStaging(
+custid INT,
+custname VARCHAR(50),
+address VARCHAR(50),
+sal INT
+);
+
+Execute.
+
+5️⃣ Copy Data (Extract Step)
+INSERT INTO CustomerStaging.dbo.CustStaging
+SELECT * FROM CustomerOLTP.dbo.CustOLTP;
+
+Execute.
+
+6️⃣ Create Data Warehouse Table
+USE CustomerDW;
+
+CREATE TABLE CustDW(
+cid INT,
+cname VARCHAR(50),
+addrs VARCHAR(50),
+salINR INT,
+salDollar FLOAT
+);
+
+Execute.
+
+7️⃣ Transform + Load
+INSERT INTO CustDW
+SELECT
+custid,
+UPPER(custname),
+address,
+sal,
+sal/70
+FROM CustomerStaging.dbo.CustStaging;
+
+Execute.
+
+8️⃣ Show Output (Very Important)
+
+Run:
+
+SELECT * FROM CustomerOLTP.dbo.CustOLTP;
+SELECT * FROM CustomerStaging.dbo.CustStaging;
+SELECT * FROM CustDW;
+
+Examiner will see transformed data.

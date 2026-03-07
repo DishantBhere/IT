@@ -1,0 +1,88 @@
+Practical: ETL + What-If Analysis using Excel
+Step 1: Perform ETL in SQL Server
+
+Create databases:
+
+CustomerOLTP
+
+CustomerStaging
+
+CustomerDW
+
+Create CustOLTP table in CustomerOLTP and insert records.
+
+Create CustStaging table in CustomerStaging.
+
+Copy data from CustOLTP → CustStaging (Extract).
+
+Create CustDW table in CustomerDW.
+
+Apply transformation:
+
+Convert custname to uppercase
+
+Calculate salDollar = salINR / 70
+
+Load transformed data into CustDW table (Load).
+
+ETL Flow:
+
+CustomerOLTP → CustomerStaging → CustomerDW
+Extract        Transform          Load
+Step 2: Import Data into Excel
+
+Open Microsoft Excel.
+
+Go to:
+
+Data → Get Data → From Database → From SQL Server
+
+Enter Server Name.
+
+Select database CustomerDW.
+
+Select table CustDW.
+
+Click Load.
+
+Now the data warehouse table appears in Excel.
+
+Step 3: Convert Table to Range
+
+Since imported data is a table:
+
+Table Design → Convert to Range
+
+This allows Excel to modify values for What-If analysis.
+
+Step 4: Apply What-If Analysis (Scenario Manager)
+
+Go to:
+
+Data → What-If Analysis → Scenario Manager
+
+Click Add.
+
+Enter:
+
+Scenario Name: INR_Test
+Changing Cell: D2 (salINR)
+
+Click OK.
+
+Enter new value for the scenario:
+
+D2 = 90000
+
+Click OK.
+
+Select the scenario and click Show.
+
+Step 5: Result
+
+Excel changes the salINR value, and the salDollar value automatically updates.
+
+Example:
+
+salINR → 50000 → 90000
+salDollar → recalculated automatically

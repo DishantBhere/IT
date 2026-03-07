@@ -1,0 +1,96 @@
+Practical: Create Data Staging Area and Import Data from Excel
+Step 1 — Create Staging Database
+
+Open SQL Server Management Studio and create a database.
+
+CREATE DATABASE Sales_Staging;
+
+Then select the database.
+
+USE Sales_Staging;
+Step 2 — Create Staging Table
+
+Create a table that will store the imported Excel data.
+
+CREATE TABLE SalesStage(
+id INT,
+name VARCHAR(50),
+city VARCHAR(50),
+amount INT
+);
+
+This table acts as the Data Staging Area.
+
+Step 3 — Prepare Excel File
+
+Create an Excel file containing the data:
+
+id	name	city	amount
+1	Rahul	Mumbai	50000
+2	Amit	Delhi	60000
+3	Sneha	Pune	55000
+4	Riya	Nashik	65000
+5	Karan	Thane	70000
+
+Save it as .xlsx.
+
+Step 4 — Open Import Wizard
+
+In SQL Server:
+
+Right click database → Sales_Staging
+Tasks → Import Data
+
+This opens the SQL Server Import and Export Wizard.
+
+Step 5 — Select Data Source
+
+Choose:
+
+Data Source → Microsoft Excel
+
+Browse and select the Excel file.
+
+Tick:
+
+First row has column names
+
+Click Next.
+
+Step 6 — Choose Destination
+
+Select:
+
+Destination → SQL Server Native Client RDA 11.0
+
+Fill:
+
+Server name → LAPTOP-ELPOE872\SQLEXPRESS
+Authentication → Windows Authentication
+Database → Sales_Staging
+
+Click Next.
+
+Step 7 — Select Data Copy Method
+
+Choose:
+
+Copy data from one or more tables or views
+
+Click Next.
+
+Step 8 — Select Excel Sheet
+
+Select the Excel sheet:
+
+Sheet1$
+
+Map it to table SalesStage.
+
+Click Next → Finish.
+
+Step 9 — Verify Imported Data
+
+Run the query:
+
+SELECT * FROM SalesStage;
