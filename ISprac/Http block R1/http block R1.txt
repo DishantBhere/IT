@@ -1,0 +1,72 @@
+1️⃣ Show ACL rule
+
+In R1 CLI
+
+""
+enable
+show ipv6 access-list
+""
+
+Examiner will see:
+
+ipv6 access-list BLOCK_HTTP
+ deny tcp any any eq www
+ permit ipv6 any any
+
+This proves HTTP is blocked.
+
+2️⃣ Show ACL applied on interface
+
+""
+show ipv6 interface g0/0
+""
+Important line examiner will see:
+
+Inbound access list BLOCK_HTTP
+
+This proves ACL is active on interface.
+
+3️⃣ Show route to server network
+
+""
+show ipv6 route
+""
+
+Examiner will see:
+
+2001:DB8:1:30::/64
+
+This proves network connectivity exists but HTTP is blocked.
+
+Final Step (Most Important)
+
+Go to:
+
+""
+PC1
+Desktop
+Web Browser
+
+Enter:
+
+""
+http://2001:DB8:1:30::30
+""
+
+Output:
+
+Request Timeout
+
+Say this sentence:
+
+"HTTP traffic is blocked using IPv6 ACL on Router R1."
+
+That’s it. Practical finished.
+
+Final Command List (what you actually type)
+enable
+show ipv6 access-list
+show ipv6 interface g0/0
+show ipv6 route
+
+Then show PC1 Web Browser → Request Timeout.

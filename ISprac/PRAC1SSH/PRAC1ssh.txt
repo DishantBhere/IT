@@ -1,0 +1,85 @@
+Practical – SSH Configuration on R3
+1️⃣ Steps to Configure SSH on R3
+Step 1 — Enter Privileged Mode
+enable
+Step 2 — Enter Global Configuration Mode
+configure terminal
+Step 3 — Set Domain Name
+
+(Required before generating RSA keys)
+
+ip domain-name ccnasecurity.com
+Step 4 — Create Local User
+username SSHadmin privilege 15 secret ciscosshpa55
+Step 5 — Configure VTY Lines for SSH
+line vty 0 4
+login local
+transport input ssh
+exit
+Step 6 — Generate RSA Keys
+crypto key generate rsa
+
+When prompted:
+
+How many bits in the modulus [512]:
+
+Type:
+
+1024
+Step 7 — Enable SSH Version 2
+ip ssh version 2
+Step 8 — Exit Configuration Mode
+end
+2️⃣ Verify SSH from PC-C
+
+Go to:
+
+PC-C → Desktop → Command Prompt
+
+Type:
+
+ssh -l SSHadmin 192.168.3.1
+
+Password:
+
+ciscosshpa55
+
+Expected Output:
+
+R3>
+enable
+R3#
+
+This proves SSH remote login is successful.
+
+3️⃣ One-Shot CLI Commands (For Quick Configuration)
+enable
+configure terminal
+ip domain-name ccnasecurity.com
+username SSHadmin privilege 15 secret ciscosshpa55
+line vty 0 4
+login local
+transport input ssh
+exit
+crypto key generate rsa
+ip ssh version 2
+end
+
+Then when asked:
+
+How many bits in the modulus [512]:
+
+Type:
+
+1024
+4️⃣ What to Show the Examiner (Important)
+On Router R3
+show ip ssh
+show running-config | include username
+show running-config | section vty
+On PC-C
+ssh -l SSHadmin 192.168.3.1
+
+Password:
+
+ciscosshpa55

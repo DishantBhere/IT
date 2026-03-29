@@ -1,0 +1,121 @@
+Site-to-Site IPsec VPN Practical Steps
+On Router R1
+Step 1 — Enter privileged mode
+
+Type
+
+enable
+
+Password
+
+cisco123
+Step 2 — Enter configuration mode
+
+Type
+
+configure terminal
+Step 3 — Configure ISAKMP policy
+
+Type
+
+crypto isakmp policy 10
+encryption aes
+hash sha
+authentication pre-share
+group 2
+lifetime 86400
+exit
+Step 4 — Configure pre-shared key
+
+Type
+
+crypto isakmp key cisco address 10.2.2.2
+Step 5 — Configure interesting traffic ACL
+
+Type
+
+access-list 110 permit ip 192.168.1.0 0.0.0.255 192.168.3.0 0.0.0.255
+Step 6 — Configure transform set
+
+Type
+
+crypto ipsec transform-set VPN-SET esp-aes esp-sha-hmac
+exit
+Step 7 — Create crypto map
+
+Type
+
+crypto map VPN-MAP 10 ipsec-isakmp
+set peer 10.2.2.2
+set transform-set VPN-SET
+match address 110
+exit
+Step 8 — Apply crypto map to interface
+
+Type
+
+interface s0/1/0
+crypto map VPN-MAP
+exit
+end
+On Router R3
+Step 1
+enable
+
+Password
+
+cisco123
+Step 2
+configure terminal
+Step 3 — ISAKMP policy
+crypto isakmp policy 10
+encryption aes
+hash sha
+authentication pre-share
+group 2
+lifetime 86400
+exit
+Step 4 — Pre-shared key
+crypto isakmp key cisco address 10.1.1.2
+Step 5 — ACL
+access-list 110 permit ip 192.168.3.0 0.0.0.255 192.168.1.0 0.0.0.255
+Step 6 — Transform set
+crypto ipsec transform-set VPN-SET esp-aes esp-sha-hmac
+exit
+Step 7 — Crypto map
+crypto map VPN-MAP 10 ipsec-isakmp
+set peer 10.1.1.2
+set transform-set VPN-SET
+match address 110
+exit
+Step 8 — Apply crypto map
+interface s0/1/0
+crypto map VPN-MAP
+exit
+end
+Verification
+
+Go to PC-A → Command Prompt
+
+Type
+
+ping 192.168.3.3
+
+First ping may show
+
+Request timed out
+
+Then you will see
+
+Reply from 192.168.3.3
+
+This means IPsec VPN tunnel established successfully.
+
+Commands to Show Examiner
+
+On router:
+
+show crypto isakmp sa
+show crypto ipsec sa
+
+✅ Your ping output already proves the VPN tunnel works.

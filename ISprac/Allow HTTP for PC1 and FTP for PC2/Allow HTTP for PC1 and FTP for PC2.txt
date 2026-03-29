@@ -1,0 +1,127 @@
+Practical – ACL (Allow HTTP for PC1 and FTP for PC2)
+1️⃣ Configure ACL on Router R1
+Step 1 — Enter privileged mode
+
+Type:
+
+enable
+
+Router prompt becomes:
+
+Router#
+Step 2 — Enter configuration mode
+
+Type:
+
+configure terminal
+
+Output:
+
+Router(config)#
+Step 3 — Allow HTTP from PC1
+
+Type:
+
+access-list 101 permit tcp host 172.22.34.66 host 172.22.34.62 eq 80
+
+Output:
+
+Router(config)#
+Step 4 — Allow FTP from PC2
+
+Type:
+
+access-list 101 permit tcp host 172.22.34.98 host 172.22.34.62 eq 21
+
+Output:
+
+Router(config)#
+Step 5 — Deny all other traffic
+
+Type:
+
+access-list 101 deny ip any any
+
+Output:
+
+Router(config)#
+Step 6 — Apply ACL to interface
+
+Type:
+
+interface gig0/0
+
+Output:
+
+Router(config-if)#
+
+Then type:
+
+ip access-group 101 in
+
+Output:
+
+Router(config-if)#
+Step 7 — Exit configuration mode
+
+Type:
+
+end
+
+Output:
+
+Router#
+2️⃣ Verify ACL Configuration
+Step 8 — Check ACL rules
+
+Type:
+
+show access-lists
+
+Output should include:
+
+Extended IP access list 101
+permit tcp host 172.22.34.66 host 172.22.34.62 eq www
+permit tcp host 172.22.34.98 host 172.22.34.62 eq ftp
+deny ip any any
+Step 9 — Verify ACL applied to interface
+
+Type:
+
+show running-config | include access-group
+
+Output:
+
+ip access-group 101 in
+3️⃣ Verify from PC2
+Step 10 — Ping server
+
+PC2 → Desktop → Command Prompt
+
+Type:
+
+ping 172.22.34.62
+
+Output:
+
+Reply from 172.22.34.62
+Step 11 — Test FTP access (should be blocked)
+
+Type:
+
+ftp 172.22.34.62
+
+Output:
+
+Error opening ftp://172.22.34.62 (Timed out)
+Step 12 — Test HTTP access
+
+PC2 → Desktop → Web Browser
+
+Enter URL:
+
+http://172.22.34.62
+
+Output:
+
+Cisco Packet Tracer webpage opens

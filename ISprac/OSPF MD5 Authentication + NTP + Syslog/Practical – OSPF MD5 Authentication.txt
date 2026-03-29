@@ -1,0 +1,95 @@
+Practical – OSPF MD5 Authentication + NTP + Syslog
+Step 1 — Verify connectivity from PC-A
+
+Open PC-A → Desktop → Command Prompt
+
+Type
+
+ping 192.168.1.1
+
+Output
+
+Reply from 192.168.1.1
+Step 2 — Verify connectivity from PC-B
+
+Open PC-B → Desktop → Command Prompt
+
+Type
+
+ping 192.168.1.1
+
+Output
+
+Reply from 192.168.1.1
+Step 3 — Check OSPF interface authentication
+
+Go to R1 CLI
+
+Type
+
+enable
+
+Then type
+
+show ip ospf interface
+
+Output should include
+
+Message digest authentication enabled
+Step 4 — Check OSPF neighbor
+
+Type
+
+show ip ospf neighbor
+
+Output example
+
+Neighbor ID     Pri   State           Dead Time   Address
+192.168.2.2       1   FULL
+Step 5 — Check routing table
+
+Type
+
+show ip route
+
+Output should include
+
+O    192.168.3.0
+
+This shows OSPF learned route.
+
+Step 6 — Verify NTP status
+
+Type
+
+show ntp status
+
+Output example
+
+Clock is synchronized
+Step 7 — Verify syslog messages
+
+Type
+
+show logging
+
+Output will show
+
+Syslog logging enabled
+Commands You Must Show Examiner
+
+On R1 CLI
+
+show ip ospf interface
+show ip ospf neighbor
+show ip route
+show ntp status
+show logging
+
+On PC-A
+
+ping 192.168.1.1
+
+On PC-B
+
+ping 192.168.1.1

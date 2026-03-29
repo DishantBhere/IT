@@ -1,0 +1,31 @@
+Final Order to Show Examiner (Very Important)
+
+Follow this sequence:
+
+Step 1
+
+Router login screen
+
+Username: admin
+Password: cisco123
+
+Step 2
+"
+enable
+"
+"
+show running-config | include username
+"
+Step 3
+"
+show running-config | include aaa
+"
+Step 4
+"
+show ip ospf interface
+"
+Step 5
+
+PC0 fir desktop fir CMD
+
+ping 192.168.1.1
