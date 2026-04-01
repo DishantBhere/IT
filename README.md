@@ -73,7 +73,44 @@ pip install pandas numpy matplotlib scikit-learn openpyxl seaborn
 
 
 
+
+
 ### Lab Manual used for Practicals
 
 ➡ [University Lab Manual](https://github.com/DishantBhere/BSCCIT/blob/main/ISprac/SiC%20Manual%20(E-next.in).pdf)
+
+
+# 🤖 Android Programming  
+
+### Software Required  
+
+Install the following tools before running the practicals:  
+
+* Android Studio (Version: Panda 2)  
+* Java JDK (17 recommended)  
+* Android SDK (comes with Android Studio)  
+* Android Emulator / Physical Device  
+
+➡  [Download Android Studio](https://developer.android.com/studio)  
+
+---
+
+### 📁 Practical Files  
+
+➡  [Android Practical Files](https://drive.google.com/drive/u/0/folders/1jBGY71fQIOvtfP6NL9DAJ1SFvNpZefY9)  
+
+---
+
+### 📝 Practical Slip & University Manual 
+
+➡  [Android Practical Slip](https://github.com/DishantBhere/BSCCIT/blob/main/Android%20Programming/AndroidPracSlip.pdf)  
+
+➡  [Android Lab Manual](https://github.com/DishantBhere/BSCCIT/blob/main/Android%20Programming/AMP%20Manual.pdf)  
+
+---
+
+
+
+
+
 
