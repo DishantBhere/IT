@@ -61,18 +61,5 @@ These tools are used to create tables and run SQL queries.
 
 ---
 
-## How to Use
 
-1. Clone the repository
 
-git clone https://github.com/DishantBhere/BSCCIT.git
-
-2. Install the required software and Python libraries.
-
-3. Open the practical files and run them using Python, R, SQL, Excel, or Power BI depending on the practical.
-
----
-
-## Purpose
-
-This repository is created to help BSc IT students easily access practical files, datasets, and university resources required for practical exams.
