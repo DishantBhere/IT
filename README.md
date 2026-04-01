@@ -156,7 +156,31 @@ If you see errors like **"SDK not found"**:
 
 ---
 
+# 🌍 Geographic Information System (GIS)
 
+### Software Required  
+
+Install the following tools before running the practicals:  
+
+* QGIS (Version 4.0)  
+➡  [Download QGIS](https://qgis.org/download/)  
+➡  [Download QGIS (Direct Installer)](https://download.qgis.org/downloads/QGIS-OSGeo4W-4.0.0-1.msi)  
+
+---
+
+### 📁 Practical Files  
+
+➡  [GIS Practical Files](ADD_YOUR_DRIVE_LINK_HERE)  
+
+---
+
+### 📝 Practical Slip & 📘 Lab Manual 
+
+➡  [GIS Practical Slip](https://github.com/DishantBhere/BSCCIT/blob/main/GIS/GIS_PRACTICAL.pdf)  
+
+➡  [GIS Lab Manual](https://github.com/DishantBhere/BSCCIT/blob/main/GIS/Most_GIS_practical_Questions_.pdf)  
+
+---
 
 
 
