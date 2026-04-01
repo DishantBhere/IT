@@ -25,20 +25,19 @@ Install Python and then install the required libraries:
 pip install pandas numpy matplotlib scikit-learn openpyxl seaborn
 ```
 
-### Lab Manual used for practicals
+### Lab Manual & Practical Slip
 
-➡  [New Lab Manual.pdf](https://github.com/DishantBhere/BSCCIT/blob/main/New%20BI/BI%20practical.pdf)
+➡  [Lab Manual](https://github.com/DishantBhere/BSCCIT/blob/main/New%20BI/BI%20practical.pdf)
 
-### Practical Slip used during Exams
 
-➡ [New BI/BI Practical_s Slips.pdf](https://github.com/DishantBhere/BSCCIT/blob/main/New%20BI/BI%20Practical_s%20Slips.pdf)
+➡ [BI Practical Slips](https://github.com/DishantBhere/BSCCIT/blob/main/New%20BI/BI%20Practical_s%20Slips.pdf)
 
 
 
 
 ### 🐍 Python Code
 
-➡ [Python Practicals](https://github.com/DishantBhere/BSCCIT/tree/main/New%20BI)
+➡ [BI Complete Python Pracs](https://github.com/DishantBhere/BSCCIT/tree/main/New%20BI)
 
 ### 📈 RStudio Code
 
@@ -67,15 +66,9 @@ pip install pandas numpy matplotlib scikit-learn openpyxl seaborn
 
 
 
-### Practical Slip used during Exams
+### Practical Slip & Lab Manual
 
 ➡ [SIC Sem Prac Slip ](https://github.com/DishantBhere/BSCCIT/blob/main/ISprac/SIC%20Practical_s%20Slips%20.pdf)
-
-
-
-
-
-### Lab Manual used for Practicals
 
 ➡ [University Lab Manual](https://github.com/DishantBhere/BSCCIT/blob/main/ISprac/SiC%20Manual%20(E-next.in).pdf)
 
@@ -91,7 +84,7 @@ Install the following tools before running the practicals:
 * Android SDK (comes with Android Studio)  
 * Android Emulator / Physical Device  
 
-➡  [Download Android Studio](https://developer.android.com/studio)  
+➡  [Download Android Studio here](https://developer.android.com/studio)  
 
 ---
 
@@ -101,13 +94,12 @@ Install the following tools before running the practicals:
 
 ---
 
-### 📝 Practical Slip & University Manual 
+### 📝 Practical Slip & Lab Manual 
 
 ➡  [Android Practical Slip](https://github.com/DishantBhere/BSCCIT/blob/main/Android%20Programming/AndroidPracSlip.pdf)  
 
 ➡  [Android Lab Manual](https://github.com/DishantBhere/BSCCIT/blob/main/Android%20Programming/AMP%20Manual.pdf)  
 
----
 
 
 
