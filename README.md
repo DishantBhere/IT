@@ -11,13 +11,13 @@ Install the following tools before running the practicals:
 
 * Visual Studio Code
 * Python (latest version)
-* RStudio
+* RStudio (Version: 2026.01.2+418)
 * Microsoft Excel
 * Power BI
-* SQL Server 2025 Express
+* SQL Server 2025/2022 Express
 * SQL Server Management Studio (SSMS)
 
-### 🐍 Python Setup
+### 🚨 Python Setup
 
 Install Python and then install the required libraries:
 
@@ -32,3 +32,21 @@ pip install pandas numpy matplotlib scikit-learn openpyxl seaborn
 ### Practical Slip used during Exams
 
 ➡ [New BI/BI Practical_s Slips.pdf](https://github.com/DishantBhere/BSCCIT/blob/main/New%20BI/BI%20Practical_s%20Slips.pdf)
+
+
+
+
+### 🐍 Python Code
+
+➡ [Python Practicals](https://github.com/DishantBhere/BSCCIT/tree/main/New%20BI)
+
+### 📈 RStudio Code
+
+➡ [ R Prac Codes](https://github.com/DishantBhere/BSCCIT/tree/main/New%20BI/R)
+
+### 📂 Datasets
+
+➡ [employees.csv](https://github.com/DishantBhere/BSCCIT/blob/main/New%20BI/employees.csv)  
+➡ [sales_data.csv](https://github.com/DishantBhere/BSCCIT/blob/main/New%20BI/sales_data.csv)  
+➡ [PRAC9datastaging](https://github.com/DishantBhere/BSCCIT/blob/main/New%20BI/PRAC9datastagingETL.xlsx)
+
