@@ -1,4 +1,4 @@
-# 🚀 Complete Development Practicals (Android, GIS, BI, Security)
+# 🚀 Complete Development Practicals (Android, GIS, BI, SIC)
 
 A well-organized collection of **Semester 6 practicals** including Android apps, GIS projects, Power BI analysis, and Information Security labs.
 
