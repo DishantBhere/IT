@@ -98,7 +98,16 @@ pip install pandas numpy matplotlib scikit-learn openpyxl seaborn
 
 ➡ [University Lab Manual](https://github.com/DishantBhere/BSCCIT/blob/main/ISprac/SiC%20Manual%20(E-next.in).pdf)
 
+### ⚙️ Instructions to Run Practicals  
+
+1. Install and open Cisco Packet Tracer  
+2. Download the practical files from the repository  
+3. Open Cisco Packet Tracer  
+4. Click on **File → Open**  
+5. Select and open the downloaded practical file  
+
 ---
+
 
 
 # 🤖 Android Programming  
