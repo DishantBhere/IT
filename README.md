@@ -168,9 +168,12 @@ Install the following tools before running the practicals:
 
 ---
 
-### 📁 Practical Files  
+### 📁 Practical Files 
 
-➡  [GIS Practical Files](ADD_YOUR_DRIVE_LINK_HERE)  
+
+➡  [GIS Datasets](https://drive.google.com/drive/folders/12s4dMyCnggqoOMdabLJg99BlAphHgm__?usp=drive_link)  
+
+➡  [GIS Practical Files](https://drive.google.com/drive/folders/1inrc6E1B6lWmxlLyowweUUjsVS09xxr4?usp=sharing)  
 
 ---
 
