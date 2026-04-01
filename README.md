@@ -1,8 +1,13 @@
-# 🚀 Complete IT Practicals Repository (Android, GIS, BI, Security)
+# 🚀 Complete Development Practicals (Android, GIS, BI, Security)
 
 A well-organized collection of **Semester 6 practicals** including Android apps, GIS projects, Power BI analysis, and Information Security labs.
 
 > 🎯 Designed for students who want ready-to-run practicals with proper setup guidance.
+
+> 🚀 Covers all major Semester 6 subjects in one place — no need to search multiple sources.
+
+## ⭐ If this helped you
+Give this repo a ⭐ to help others find it!
 
 
 
@@ -116,7 +121,7 @@ pip install pandas numpy matplotlib scikit-learn openpyxl seaborn
 
 Install the following tools before running the practicals:  
 
-* Android Studio (Version: Panda 2)  
+*Android Studio (Version: Panda | 2022.1.1)
 * Java JDK (17 recommended)  
 * Android SDK (comes with Android Studio)  
 * Android Emulator / Physical Device  
