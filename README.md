@@ -49,6 +49,8 @@ pip install pandas numpy matplotlib scikit-learn openpyxl seaborn
 ➡ [sales_data.csv](https://github.com/DishantBhere/BSCCIT/blob/main/New%20BI/sales_data.csv)  
 ➡ [PRAC9datastaging](https://github.com/DishantBhere/BSCCIT/blob/main/New%20BI/PRAC9datastagingETL.xlsx)
 
+---
+
 
 # 🔐 Information Security 
 
@@ -72,10 +74,12 @@ pip install pandas numpy matplotlib scikit-learn openpyxl seaborn
 
 ➡ [University Lab Manual](https://github.com/DishantBhere/BSCCIT/blob/main/ISprac/SiC%20Manual%20(E-next.in).pdf)
 
+---
+
 
 # 🤖 Android Programming  
 
-### Software Required  
+### 🎯 Software Required  
 
 Install the following tools before running the practicals:  
 
@@ -86,20 +90,71 @@ Install the following tools before running the practicals:
 
 ➡  [Download Android Studio here](https://developer.android.com/studio)  
 
----
-
-### 📁 Practical Files  
+## 📁 Practical Files  
 
 ➡  [Android Practical Files](https://drive.google.com/drive/u/0/folders/1jBGY71fQIOvtfP6NL9DAJ1SFvNpZefY9)  
 
----
 
-### 📝 Practical Slip & Lab Manual 
+## 📝 Practical Slip & Lab Manual 
 
 ➡  [Android Practical Slip](https://github.com/DishantBhere/BSCCIT/blob/main/Android%20Programming/AndroidPracSlip.pdf)  
 
 ➡  [Android Lab Manual](https://github.com/DishantBhere/BSCCIT/blob/main/Android%20Programming/AMP%20Manual.pdf)  
 
+# 📱 Android Practical Setup Guide
+
+## 1. Download Project
+
+* Download the ZIP file of the required practical
+* Extract the ZIP file
+
+## 2. Open in Android Studio
+
+* Open Android Studio
+* Click **"Open"**
+* Select the extracted project folder
+  (Do NOT select the `app` folder)
+
+## 3. Sync Project
+
+* Click **"Sync Now"** when prompted
+* Make sure to have good internet connection
+* Wait for the process to complete
+
+## 4. Fix SDK Issue (if any)
+
+If you see errors like **"SDK not found"**:
+
+* Go to **File > Project Structure > SDK Location**
+* Set the Android SDK path
+  OR
+* Install SDK if Android Studio asks
+
+## 5. Build & Run
+
+* Connect your device or start an emulator
+* Click **Run ▶️**
+
+
+## ⚠️ Common Issues
+
+**Gradle Build Failed**
+
+* Click **"Sync Project with Gradle Files"**
+* Check internet connection
+
+**Missing Files (like local.properties)**
+
+* Android Studio will generate them automatically
+
+
+
+## ✅ Notes
+
+* Project is built using **Kotlin**
+* No need to worry about missing `.gradle` or build files — Android Studio will recreate them
+
+---
 
 
 
