@@ -50,3 +50,27 @@ pip install pandas numpy matplotlib scikit-learn openpyxl seaborn
 ➡ [sales_data.csv](https://github.com/DishantBhere/BSCCIT/blob/main/New%20BI/sales_data.csv)  
 ➡ [PRAC9datastaging](https://github.com/DishantBhere/BSCCIT/blob/main/New%20BI/PRAC9datastagingETL.xlsx)
 
+
+# 🔐 Information Security 
+
+### Software Required
+
+* Cisco Packet Tracer (9.0.0)
+
+
+
+### 📁 Practical Files
+
+➡ [IS Practical Files](https://github.com/DishantBhere/BSCCIT/tree/main/ISprac)
+
+
+### Practical Slip used during Exams
+
+➡ [SIC Sem Prac Slip ](https://github.com/DishantBhere/BSCCIT/blob/main/ISprac/SIC%20Practical_s%20Slips%20.pdf)
+
+
+
+### Lab Manual used for Practicals
+
+➡ [University Lab Manual](https://github.com/DishantBhere/BSCCIT/blob/main/ISprac/SiC%20Manual%20(E-next.in).pdf)
+
