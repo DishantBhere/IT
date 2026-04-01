@@ -183,6 +183,19 @@ Install the following tools before running the practicals:
 
 ➡  [GIS Lab Manual](https://github.com/DishantBhere/BSCCIT/blob/main/GIS/Most_GIS_practical_Questions_.pdf)  
 
+
+## ⚠️ Note for GIS Practicals
+
+Some GIS practical files may be unstructured or not properly organized.
+Sorry for the inconvenience — you may need to adjust or arrange files manually.
+
+### How to Run GIS Project
+
+1. Open the provided **QGIS project file** in QGIS
+2. You may see errors about **missing datasets**
+3. Simply **relink/replace the dataset paths** to the correct file locations
+4. Once paths are fixed, the entire project will load correctly
+
 ---
 
 
