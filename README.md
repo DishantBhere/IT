@@ -63,6 +63,9 @@ pip install pandas numpy matplotlib scikit-learn openpyxl seaborn
 
 ➡ [IS Practical Files](https://github.com/DishantBhere/BSCCIT/tree/main/ISprac)
 
+➡ [Complete Practicals](https://github.com/DishantBhere/BSCCIT/tree/main/ISprac/SIC%20Practicals)
+
+
 
 ### Practical Slip used during Exams
 
