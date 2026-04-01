@@ -1,34 +1,11 @@
-# BSc IT Practicals
+# Semester 6 Practicals
 
-This repository contains BSc IT practicals, datasets, and resources used during practical exams.
-It also includes the Lab Manual and Practical Slip provided by the university so students can understand which practicals may appear in exams.
+This repository contains practical files, datasets, and project resources organized by subject with their respective codes, tools, and locations.
 
-
-## Repository Contents
-
-This repository includes:
-
-* Python & Rstudio Practical files
-* CSV / Excel datasets used in practicals
-* SQL practical setup and queries
-* Power BI files
-* University Lab Manual
-* University Practical Slip
+## 📊 Power BI
 
 
-## University Resources
-
-### Lab Manual used for practicals
-
-➡  [New Lab Manual.pdf](https://github.com/DishantBhere/BSCCIT/blob/main/New%20BI/BI%20practical.pdf)
-
-### Practical Slip used during exams
-
-➡ [New BI/BI Practical_s Slips.pdf](https://github.com/DishantBhere/BSCCIT/blob/main/New%20BI/BI%20Practical_s%20Slips.pdf)
-
----
-
-## Software Required
+### Software Required
 
 Install the following tools before running the practicals:
 
@@ -37,29 +14,21 @@ Install the following tools before running the practicals:
 * RStudio
 * Microsoft Excel
 * Power BI
+* SQL Server 2025 Express
+* SQL Server Management Studio (SSMS)
 
-
-## Python Setup
+### 🐍 Python Setup
 
 Install Python and then install the required libraries:
 
 ```
 pip install pandas numpy matplotlib scikit-learn openpyxl seaborn
 ```
-These libraries are required for data analysis and visualization practicals.
 
+### Lab Manual used for practicals
 
-## SQL Practical Setup
+➡  [New Lab Manual.pdf](https://github.com/DishantBhere/BSCCIT/blob/main/New%20BI/BI%20practical.pdf)
 
-For SQL related practicals install:
+### Practical Slip used during Exams
 
-* Visual Studio Code
-* SQL Server 2025 Express
-* SQL Server Management Studio (SSMS)
-
-These tools are used to create tables and run SQL queries.
-
----
-
-
-
+➡ [New BI/BI Practical_s Slips.pdf](https://github.com/DishantBhere/BSCCIT/blob/main/New%20BI/BI%20Practical_s%20Slips.pdf)
